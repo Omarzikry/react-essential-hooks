@@ -116,7 +116,7 @@ const YourComponent = () => {
 ### Contributing
 Contributions are welcome! If you have a feature request, bug report, or a suggestion, please open an issue on our GitHub repository. For pull requests, please follow the existing code style and include tests for any new or changed functionality.
 
-<a href="https://github.com/Omarzikry](https://github.com/Omarzikry/react-essential-hooks" target="_blank"><img alt="Github" src="https://img.shields.io/badge/GitHub-%2312100E.svg?&style=for-the-badge&logo=Github&logoColor=white" /></a>
+<a href="https://github.com/Omarzikry/react-essential-hooks" target="_blank"><img alt="Github" src="https://img.shields.io/badge/GitHub-%2312100E.svg?&style=for-the-badge&logo=Github&logoColor=white" /></a>
 
 ### License
 This project is licensed under the MIT License - see the LICENSE file for details.
