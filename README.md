@@ -34,7 +34,7 @@ The `callApi` function accepts an object with the following properties:
 ### Usage Example
 
 ```jsx
-import { useApiCall } from 'path/to/hooks';
+import { useApiCall } from 'react-essential-hooks';
 
 const YourComponent = () => {
     const { data, error, isLoading, callApi } = useApiCall();
@@ -71,7 +71,7 @@ Default Behavior
 
 ### Usage
 ```jsx
-import { useForm } from 'path/to/hooks';
+import { useForm } from 'react-essential-hooks';
 
 const YourFormComponent = () => {
     const formProps = {
@@ -104,7 +104,7 @@ const YourFormComponent = () => {
 ### Usage
 
 ```jsx
-import { useHasMounted } from 'path/to/hooks';
+import { useHasMounted } from 'react-essential-hooks';
 
 const YourComponent = () => {
     const hasMounted = useHasMounted();
