@@ -11,6 +11,7 @@
     "hook",
     "useForm hook",
     "useApiCall hook",
+    "useHasMounted hook",
     "api call"
   ],
   "repository": "https://github.com/Omarzikry/react-essential-hooks",
