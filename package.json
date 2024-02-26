@@ -1,46 +1,70 @@
 {
   "name": "react-essential-hooks",
-  "version": "1.0.2",
+  "version": "1.2.4",
   "description": "Essential hooks for common react tasks",
-  "main": "index.ts",
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "author": "Omar Zikry <omar@omarzikry.com>",
+  "license": "MIT",
   "keywords": [
     "react",
-    "hooks",
-    "form",
+    "react-hook",
+    "react hook",
     "hook",
-    "api",
-    "call"
+    "useForm hook",
+    "useApiCall hook",
+    "api call"
   ],
+  "repository": "https://github.com/Omarzikry/react-essential-hooks",
+  "homepage": "https://github.com/Omarzikry/react-essential-hooks?tab=readme-ov-file",
+  "types": "dist/types/index.d.ts",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/types/index.d.ts",
+        "default": "./dist/esm/index.js"
+      },
+      "require": {
+        "types": "./dist/types/index.d.ts",
+        "default": "./dist/cjs/index.js"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && tsc -p tsconfig-types.json",
+    "lint": "eslint . --ext .ts,.tsx",
+    "test": "jest test --coverage",
+    "prepare": "npm run build"
+  },
   "peerDependencies": {
-    "react": "^17.0.0 || ^18.0.0",
-    "typescript": "^4.7.0"
+    "react": ">=16.0.0",
+    "react-dom": ">=16.0.0"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@types/react": "18.0.17",
-    "@types/react-dom": "18.0.6",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-scripts": "^5.0.1",
-    "typescript": "^4.7.2"
+    "@babel/preset-env": "^7.22.10",
+    "@babel/preset-react": "^7.22.5",
+    "@testing-library/jest-dom": "^6.1.1",
+    "@testing-library/react": "^14.0.0",
+    "@types/jest": "^29.5.4",
+    "@types/node": "^20.5.0",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "@typescript-eslint/parser": "^6.4.1",
+    "eslint": "^8.47.0",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "jest": "^29.6.3",
+    "jest-environment-jsdom": "^29.6.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.1.6"
   },
-  "author": "Omar Zikry",
-  "license": "MIT",
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "files": [
+    "dist",
+    "src"
+  ]
 }

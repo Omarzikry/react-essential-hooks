@@ -95,7 +95,7 @@ export const useForm = <Values extends FormValues>( // Ts : generics constraint
             HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
         >
     ) => {
-        let { value, name, type } = e.target;
+        let { value, name } = e.target;
         const isValueBoolean = typeof initial[name] === 'boolean';
         setInputs(prevState => ({
             // copy the existing state
