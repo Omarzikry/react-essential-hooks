@@ -1,5 +1,5 @@
 import { renderHook, act, waitFor } from '@testing-library/react';
-import { useApiCall } from './useApiCall';
+import { useApiCall } from '../hooks/useApiCall';
 import fetchMock from "jest-fetch-mock";
 
 describe('useApiCall', () => {
