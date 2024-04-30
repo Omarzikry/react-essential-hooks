@@ -1,5 +1,5 @@
 import { renderHook, act } from '@testing-library/react';
-import { useForm } from '../hooks/useForm';  // Adjust the import path
+import { useForm } from '../hooks/useForm';
 import { ChangeEvent } from 'react';
 
 describe('useForm', () => {
