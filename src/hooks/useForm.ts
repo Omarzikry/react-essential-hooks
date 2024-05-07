@@ -66,7 +66,7 @@ export const useForm = <Values extends FormValues>( // Ts : generics constraint
             [name]: true,
         });
 
-        // use validate function from utils to validate inputs
+        // validate inputs
         if (validateSchema[name]) {
             const error = validate({
                 value: inputs[name],
